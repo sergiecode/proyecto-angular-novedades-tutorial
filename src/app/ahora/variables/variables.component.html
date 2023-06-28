@@ -1,0 +1,13 @@
+<h1>Signals</h1>
+<p>Angular 16 introduce signals, una forma nueva de gestionar cambios de estado en aplicaciones. Las signals son
+    funciones que pueden actualizarse y depender de otras, creando un gráfico reactivo que se actualiza automáticamente.
+    Con observables RxJS, las signals permiten flujos de datos declarativos y potentes.</p>
+
+<p>En comparación con el mecanismo tradicional de detección de cambios en Angular, las signals permiten la detección de
+    cambios sólo en los componentes afectados, mejorando el rendimiento y reduciendo la complejidad. Las señales también
+    hacen que el código sea más fácil de entender y permiten un mayor control sobre los cambios de valores.</p>
+
+
+<div class="contenedor">
+    <span>{{ fullName() }}</span><button class="btn btn-primary" (click)="setName('Sergie')">Click</button>
+</div>
