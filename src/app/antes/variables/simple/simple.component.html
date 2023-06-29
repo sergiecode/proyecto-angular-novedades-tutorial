@@ -1,0 +1,21 @@
+<h1>Variables Simples</h1>
+<p>La diferencia principal entre las variables simples y los observables radica en cómo manejan los cambios de datos.
+    Las variables simples son útiles para almacenar valores estáticos que no cambian con el tiempo, mientras que los
+    observables son ideales para manejar flujos de datos asincrónicos y reactivos que pueden cambiar o actualizarse en
+    cualquier momento.</p>
+
+    <hr>
+
+
+    <p><b>a: number = 1</b> => {{a}} </p>
+    <p><b>b: number = 2</b> => {{b}} </p>
+    <p><b>c: number = this.a + this.b</b> => {{c}} </p>
+
+    <button class="btn btn-primary" (click)="cambiarNumero()">CAMBIAR NUMERO A</button>
+    <hr>
+
+    <p><b>texto: string = 'Angular'</b> => {{texto}} </p>
+    <p><b>masTexto: string = 'Clase Viernes'</b> => {{masTexto}} </p>
+    <p><b>concatenado: string = this.texto + this.masTexto</b> => {{concatenado}} </p>
+
+    <button class="btn btn-primary" (click)="cambiarTexto()">CAMBIAR TEXTO</button>

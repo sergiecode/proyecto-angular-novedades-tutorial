@@ -1,0 +1,39 @@
+<h1>Variables Observables</h1>
+<h2>RxJS</h2>
+<p>RxJS (Reactive Extensions for JavaScript) es una biblioteca de programación reactiva que permite trabajar con flujos
+    de datos asincrónicos utilizando secuencias observables. Angular utiliza RxJS como una parte integral de su
+    arquitectura para manejar eventos y operaciones asincrónicas.</p>
+
+<h3>Observable</h3>
+
+<p>Observable es la base de la programación reactiva en RxJS. Representa una secuencia de valores que ocurren en el
+    tiempo. Los Observables pueden emitir valores y notificar a los observadores cuando hay cambios en esos valores.
+    Puedes utilizar métodos como subscribe() para suscribirte a un Observable y recibir los valores emitidos.</p>
+
+<h3>BehaviorSubject</h3>
+
+<p>BehaviorSubject es un tipo especial de Observable que mantiene un valor actual y emite ese valor a los nuevos
+    suscriptores inmediatamente después de la suscripción, y luego continúa emitiendo cualquier cambio posterior. Esto
+    significa que siempre habrá un valor disponible para los nuevos suscriptores.</p>
+
+<h3>Subscription</h3>
+
+<p>Subscription se utiliza para administrar las suscripciones a Observables. Al suscribirte a un Observable, obtienes
+    una instancia de Subscription que puedes utilizar para cancelar la suscripción y liberar recursos cuando ya no se
+    necesiten.</p>
+
+    <hr>
+
+    <div class="contenedor">
+        <span>{{ numero }} + 3 = {{ numeroModificado }}</span><button class="btn btn-primary"
+            (click)="cambiarNumero(5)">Cambia Número</button>
+    </div>
+
+    <hr>
+
+<div class="contenedor">
+    <span>{{ nombreModificado }}</span><button class="btn btn-primary"
+        (click)="cambiarNombre('Sergie')">Cambiar Nombre</button>
+</div>
+
+<hr>

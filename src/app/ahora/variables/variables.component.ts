@@ -7,16 +7,25 @@ import { Component, computed, effect, signal } from '@angular/core';
 })
 export class VariablesComponent {
 
-  firstName = signal('Angular');
-  lastName = signal('Code');
-  fullName = computed(() => `${this.firstName()} ${this.lastName()}`);
+  nombre = signal('Angular');
+  apellido = signal('Code');
+  nombreCompleto = computed(() => `${this.nombre()} ${this.apellido()}`);
+
+  a = signal(1)
+  b = signal(3)
+  sumaNumeros = computed(() => this.a() + this.b())
 
   constructor() {
-    effect(() => console.log('Name changed:', this.fullName()));
+    effect(() => console.log('El nombre ha cambiado:', this.nombreCompleto()));
+    effect(() => console.log('El número ha cambiado:', this.sumaNumeros()));
   }
 
-  setName(newName: string) {
-    this.firstName.set(newName);
+  setNombre(nuevoNombre: string) {
+    this.nombre.set(nuevoNombre);
+  }
+
+  setNumero(nuevoNumero: number){
+    this.a.set(nuevoNumero)
   }
 
 }
