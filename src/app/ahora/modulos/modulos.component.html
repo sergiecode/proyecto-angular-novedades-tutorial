@@ -1,0 +1,47 @@
+<h1>Componentes independientes</h1>
+<h2>Standalone Components</h2>
+
+<p>
+    Standalone Components simplifican la relación entre Componentes y Módulos en Angular, eliminando la sobrecarga
+    adicional de los NgModules. Los SC proporcionan una manera más fácil de proveer servicios, eliminando una de las
+    tres opciones disponibles. Los NgModules ofrecen una encapsulación parcial, pero pueden ser sobrepasados, lo que no
+    es recomendable.
+</p>
+
+<p>La modularidad completa se puede obtener mediante la creación de librerías en Angular. Las librerías proporcionan
+    encapsulación completa y permiten exponer componentes y NgModules al exterior.</p>
+
+
+<hr>
+<div class="container"><mat-slide-toggle (change)="change($event)">Activá la tarjeta</mat-slide-toggle>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col" *ngFor="let item of list">
+
+                <mat-card class="example-card" *ngIf="showTarjeta">
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>Shiba Inu</mat-card-title>
+                        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba{{item}}.jpg"
+                        alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                        <p>
+                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from
+                            Japan.
+                            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+                            originally
+                            bred for hunting.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-raised-button class="m-2" color="primary">LIKE</button>
+                        <button mat-raised-button class="m-2" color="accent">SHARE</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

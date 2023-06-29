@@ -11,6 +11,9 @@ import { HijoComponent } from './tags/hijo/hijo.component';
 import { InputsComponent } from './inputs/inputs.component';
 import { ChildComponent } from '../antes/inputs/child/child.component';
 import { MatTableModule } from '@angular/material/table';
+import { DependenciasComponent } from './dependencias/dependencias.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ModulosComponent } from './modulos/modulos.component';
 
 
 @NgModule({
@@ -21,13 +24,16 @@ import { MatTableModule } from '@angular/material/table';
     TagsComponent,
     HijoComponent,
     InputsComponent,
-    ChildComponent
+    ChildComponent,
+    DependenciasComponent,
+    ModulosComponent
   ],
   imports: [
     CommonModule,
     AntesRoutingModule,
     MatTabsModule,
     MatTableModule
-  ]
+  ],
+  providers:[]
 })
 export class AntesModule { }

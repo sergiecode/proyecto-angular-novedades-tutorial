@@ -12,6 +12,8 @@ import { RequiredComponent } from './inputs/required/required.component';
 import { TransformComponent } from './inputs/transform/transform.component';
 import { CondicionalComponent } from './inputs/condicional/condicional.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { DependenciasComponent } from './dependencias/dependencias.component';
+import { ModulosComponent } from './modulos/modulos.component';
 
 
 @NgModule({
@@ -23,13 +25,16 @@ import { MatTabsModule } from '@angular/material/tabs';
     ChildComponent,
     RequiredComponent,
     TransformComponent,
-    CondicionalComponent
+    CondicionalComponent,
+    DependenciasComponent,
   ],
   imports: [
     CommonModule,
     AhoraRoutingModule,
     MatTableModule,
-    MatTabsModule
+    MatTabsModule,
+
+    ModulosComponent // Standalone
   ]
 })
 export class AhoraModule { }

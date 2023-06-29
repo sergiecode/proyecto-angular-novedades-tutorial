@@ -3,10 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { VariablesComponent } from './variables/variables.component';
 import { TagsComponent } from './tags/tags.component';
 import { InputsComponent } from './inputs/inputs.component';
+import { DependenciasComponent } from './dependencias/dependencias.component';
+import { ModulosComponent } from './modulos/modulos.component';
 
 const routes: Routes = [
   {path: 'variables', component: VariablesComponent},
   {path: 'inputs', component: InputsComponent},
+  {path: 'dependencias', component: DependenciasComponent},
+  {path: 'modulos', component: ModulosComponent},
   {path: 'tags', component: TagsComponent},
   {path: '**', redirectTo:'variables'}
 ];
