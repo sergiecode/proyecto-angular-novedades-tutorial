@@ -1,0 +1,27 @@
+<h1>Inputs:</h1>
+<p>
+    En Angular, puedes pasar información del padre al hijo utilizando la comunicación entre componentes. Hay varias
+    formas de lograrlo:
+
+</p>
+<ul>
+    <li><b>Input binding: </b> Puedes utilizar el mecanismo de "input binding" para pasar datos desde el componente padre al
+        hijo. En el componente hijo, define una propiedad con el decorador @Input() y luego puedes asignarle un valor
+        desde el componente padre en la plantilla del padre utilizando la sintaxis [propiedadHijo]="valorPadre". Esto
+        permitirá que el hijo acceda al valor pasado desde el padre.</li>
+
+    <li><b>@ViewChild: </b> Puedes usar @ViewChild para obtener una referencia a un componente hijo en el componente padre y
+        luego
+        acceder a sus propiedades o métodos directamente desde el padre.</li>
+    <li><b>Servicio compartido: </b> Puedes crear un servicio compartido para almacenar datos y acceder a ellos desde
+        componentes
+        padre e hijos. El servicio actuará como un intermediario para compartir información entre componentes.</li>
+
+</ul>
+<p>
+
+    Estas son solo algunas formas de pasar información del padre al hijo en Angular. La elección de la técnica adecuada
+    depende del contexto y de tus necesidades específicas.
+</p>
+
+<app-child [dataSource]="dataPadre"></app-child>

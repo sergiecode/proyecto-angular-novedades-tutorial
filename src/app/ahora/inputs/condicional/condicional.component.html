@@ -1,0 +1,56 @@
+<div class=" m-2 mb-5" *ngIf="!esEmpresa">
+    <h2>Formulario personal</h2>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Nickname" aria-label="Nombre"
+            aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Nombre Personal" aria-label="Nombre Personal"
+            aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2">@sergiecode.com</span>
+    </div>
+
+    <div class="mb-3">
+        <label for="basic-url" class="form-label">Web Personal</label>
+        <div class="input-group">
+            <span class="input-group-text" id="basic-addon3">https://sergiecode.com/usuarios/</span>
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+        </div>
+        <div class="form-text" id="basic-addon4">Esta web será de utilización personal</div>
+    </div>
+</div>
+
+<div class="mb-5" *ngIf="esEmpresa">
+    <h2>Formulario empresarial</h2>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="NombreEmpresa" aria-label="Nombre"
+            aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Usuario Empresa" aria-label="Nombre"
+            aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="CUIT" aria-label="Nombre" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Empresa" aria-label="Nombre Personal"
+            aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2">@sergiecode.com</span>
+    </div>
+
+    <div class="mb-3">
+        <label for="basic-url" class="form-label">Web Empresa</label>
+        <div class="input-group">
+            <span class="input-group-text" id="basic-addon3">https://sergiecode.com/empresas/</span>
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+        </div>
+        <div class="form-text" id="basic-addon4">Esta web será de utilización empresarial</div>
+    </div>
+</div>
