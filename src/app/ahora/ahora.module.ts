@@ -14,6 +14,7 @@ import { CondicionalComponent } from './inputs/condicional/condicional.component
 import { MatTabsModule } from '@angular/material/tabs';
 import { DependenciasComponent } from './dependencias/dependencias.component';
 import { ModulosComponent } from './modulos/modulos.component';
+import { PizarronComponent } from './pizarron/pizarron.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { ModulosComponent } from './modulos/modulos.component';
     TransformComponent,
     CondicionalComponent,
     DependenciasComponent,
+    PizarronComponent,
   ],
   imports: [
     CommonModule,

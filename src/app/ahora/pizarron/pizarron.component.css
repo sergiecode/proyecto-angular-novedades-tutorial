@@ -1,0 +1,13 @@
+.contenedor {
+    background-color: rgba(0, 0, 0, 0.5);   
+    border-radius: 5px;
+    min-width: 80%;
+    min-height: 50vh;
+    padding: 10px;
+  }
+
+  code{
+    color: black;
+    font-size:medium;
+    font-weight: 900;
+  }
